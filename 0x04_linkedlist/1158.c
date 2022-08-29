@@ -10,10 +10,6 @@ typedef struct node
 
 void print_del(node *head, int n, int k)
 {
-    if (head == NULL)
-    {
-        return;
-    }
     node *tmp = head;
     
     for (int i = 0; i < n; i++)
