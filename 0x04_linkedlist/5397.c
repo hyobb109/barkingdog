@@ -53,7 +53,7 @@ void print(node *head)
 {
     while (head != NULL)
     {
-        // 첫번째 노드가 아니면 출력하기
+        // 첫번째 노드가 아니면 출력
         if (head->data != '*')
             printf("%c", head->data);
         node *tmp = head;
