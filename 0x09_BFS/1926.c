@@ -79,5 +79,5 @@ int main() {
     }
   }
   printf("%d\n", cnt);
-  printf("%d\n", max); // 개행 빼먹음..
+  printf("%d\n", max); // 개행 빼먹음.. => 상관 없었다
 }
