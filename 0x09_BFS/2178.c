@@ -1,11 +1,14 @@
 // 미로 탐색
 #include <stdio.h>
 
+int board[105][105];
+int dist[105][105];
+int dx[4] = {1, -1, 0, 0};
+int dy[4] = {0, 0, 1, -1};
+int q[10000][2];
+
 int main()
 {
-    int board[105][105];
-    int dist[105][105];
-
     int n = 0;
     int m = 0;
 
@@ -19,9 +22,7 @@ int main()
             dist[i][j] = -1; // 거리 -1로 초기화
         }
     }
-    int dx[4] = {1, -1, 0, 0};
-    int dy[4] = {0, 0, 1, -1};
-    int q[105][2];
+
     int head = 0;
     int tail = 0;
 
